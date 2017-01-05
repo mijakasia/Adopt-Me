@@ -1,0 +1,18 @@
+@keyframes serve_bones {
+  0% {
+    left: -60px;
+  }
+
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes logo-hover {
+    from {
+      background-color: white;
+    }
+    to {
+      background-color: black;
+    }
+}

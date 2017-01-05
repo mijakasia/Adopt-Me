@@ -1,0 +1,19 @@
+@import "variables.scss";
+@import "animations.scss";
+@import "components/navbar.scss";
+@import "components/jumbotron.scss";
+@import "components/content.scss";
+@import "components/footer.scss";
+
+
+@font-face {
+    font-family: mainFont;
+    src: url('fonts/Roboto-Regular.ttf');
+}
+
+body {
+  background-color: $background-grey;
+  font-family: mainFont;
+  width: 100%;
+  overflow-x: hidden;
+}

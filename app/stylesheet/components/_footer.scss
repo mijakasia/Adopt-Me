@@ -1,0 +1,32 @@
+footer {
+  height: 100px;
+  width: 100%;
+  background-color: black;
+  position: relative;
+  overflow-x: hidden;
+
+  .dog {
+    background: black url(images/food.png) no-repeat center right / contain;
+    height: 100px;
+    width: 90px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+  }
+
+  .bone {
+    height: 50px;
+    position: absolute;
+    top: 30px;
+    left: -60px;
+    animation: serve_bones 8s infinite linear;
+
+    $x: 0;
+    @for $i from 2 through 4 {
+      &:nth-child(#{$i}) {
+        animation-delay: $x+2s;
+      }
+      $x: $x+2s;
+    }
+  }
+}
